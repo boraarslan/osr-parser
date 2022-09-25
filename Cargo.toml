@@ -8,13 +8,10 @@ license = "MIT"
 repository = "https://github.com/sibyl666/osr-parser"
 homepage = "https://github.com/sibyl666/osr-parser"
 
-exclude = [
-  "replay.osr",
-  "./tests/*"
-]
+exclude = ["replay.osr", "./tests/*"]
 
 [dependencies]
-serde = { version = "1.0", optional = true, features = ["derive"] }
+serde = { version = "1.0",  features = ["derive"], optional = true }
 lzma = { version = "0.2.2", optional = true }
 
 [features]
